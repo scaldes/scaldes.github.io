@@ -3,19 +3,33 @@
 
 /*everything thats a ddescendant of html*/
 
-html* {
-    box-sizing: border-box;
+html {
+    box-sizing:  border-box;
     <meta name="viewport" content="width=device-width">
 }
 
-*:before,
-*after {
+before,
+after {
     box-sizing: border-box;
     
 }
 
 container {
     margin: center;
+    
+}
+
+
+h1 {
+  font-size: 35px;
+    font-weight: 200;
+    
+    margin: 2px;
+    border: 0px;
+    font-family: serif;
+    padding-right: 7px;
+    padding-left: 7px;
+    text-align: right;
     
 }
 
@@ -41,14 +55,6 @@ p {font-family: sans-serif;
 
 }
 
-h1 {
-  font-size: 53px;
-    margin: auto;
-    border: 0px;
-    font-family: serif;
-    padding-right: 7px;
-    padding-left: 7px;
-}
 
 h2,
 h3,

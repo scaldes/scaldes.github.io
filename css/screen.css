@@ -3,13 +3,13 @@
 
 /*everything thats a ddescendant of html*/
 
-html* {
+html {
     box-sizing: border-box;
     <meta name="viewport" content="width=device-width">
 }
 
-*:before,
-*after {
+before,
+after {
     box-sizing: border-box;
     
 }
@@ -103,10 +103,10 @@ h6 {
 }
 
 
-.bottom  {
-    background-color: aliceblue;
+/*.bottom  {*/
+/*    background-color: aliceblue;*/
    
-}
+/*}*/
 
 body {
     font-size: 24px;

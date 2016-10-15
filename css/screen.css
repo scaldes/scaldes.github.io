@@ -3,13 +3,13 @@
 
 /*everything thats a ddescendant of html*/
 
-html {
-    box-sizing:  border-box;
+html* {
+    box-sizing: border-box;
     <meta name="viewport" content="width=device-width">
 }
 
-before,
-after {
+*:before,
+*after {
     box-sizing: border-box;
     
 }
@@ -29,7 +29,7 @@ h1 {
     font-family: serif;
     padding-right: 7px;
     padding-left: 7px;
-    text-align: right;
+    text-align: center;
     
 }
 
@@ -94,7 +94,7 @@ h6 {
 }
 
 
-.bottom {
+.bottom  {
     background-color: aliceblue;
    
 }

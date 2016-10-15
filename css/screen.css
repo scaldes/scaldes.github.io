@@ -5,7 +5,7 @@
 
 html {
     box-sizing: border-box;
-    <meta name="viewport" content="width=device-width">
+    
 }
 
 before,
@@ -88,15 +88,18 @@ h6 {
 
 footer {
     background-color: aliceblue;
-    */ padding: 5px;
+    padding: 5px;
     border: 2px solid #000000;
-    margin: 15px auto;
-    width: 570px;
-    text-align-last: inherit;
+    margin: 0px auto;
+    width: 563px;
+    text-align-last: auto;
     font-size: 18px;
     position: relative;
     word-spacing: 5px;
+    align-self: auto;
 }
+
+
 
 #links {
     color: darkblue;

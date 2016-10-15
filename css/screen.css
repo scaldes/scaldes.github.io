@@ -3,15 +3,14 @@
 
 /*everything thats a ddescendant of html*/
 
-html {
-    box-sizing: border-box;
+/*html {*/
+/*    box-sizing: border-box;*/
 }
 
-before,
-after {
-    box-sizing: border-box;
+/*before,*/
+/*after {*/
+/*    box-sizing: border-box;*/
 }
-
 
 h1 {
     font-size: 35px;
@@ -36,14 +35,14 @@ h4 {
     word-spacing: 0px;
     margin-bottom: 2px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 5px;
     display: block;
     border: 2px solid black;
+    background-color: white;
 }
 
 li {
     display: inline;
- 
     border: 2px solid black;
     font-family: sans-serif;
 }
@@ -64,7 +63,7 @@ h6 {
     background-color: gainsboro;
     margin: 25px;
     padding: 5px;
-    width: 352px;
+    width: 372px;
     display: block;
     border: 2px solid black;
     text-align: left;
@@ -73,10 +72,7 @@ h6 {
 .nav-bar {
     background-color: aliceblue;
     padding: 5px;
-    border: 2px solid black;
-    margin: 15px center;
-    width: 500px;
-    text-align-last: inherit;
+    width: 560px;
     font-size: 18px;
     position: relative;
     word-spacing: 5px;
@@ -98,15 +94,6 @@ footer {
 #links {
     color: darkblue;
 }
-
-
-/*.bottom  {*/
-
-
-/*    background-color: aliceblue;*/
-
-
-/*}*/
 
 body {
     font-size: 24px;

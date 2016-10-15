@@ -41,6 +41,15 @@ section {
     margin: auto;
 }
 
+h4 {
+    
+    text word-spacing: 0px;
+    margin-bottom: 2px;
+    text-align: center;
+    margin-top: 0px;
+    display: block;
+    border: 2px solid #000000;
+}
 
 
 li {

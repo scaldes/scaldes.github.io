@@ -98,6 +98,19 @@ h6 {
     
 }
 
+footer {
+    background-color: aliceblue;
+   
+    */ padding: 5px;
+    border: 2px solid #000000;
+    margin: 15px auto;
+    width: 500px;
+    text-align-last:  inherit;
+    font-size: 18px;
+    position: relative;
+    word-spacing: 5px;
+}
+
 #links{ 
     color: darkblue;
 }

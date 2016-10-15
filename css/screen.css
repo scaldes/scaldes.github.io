@@ -1,0 +1,70 @@
+/* Chane the Css box model */
+
+
+/*everything thats a ddescendant of html*/
+
+html* {
+    box-sizing: border-box;
+    <meta name="viewport" content="width=deice-width">
+}
+
+*:before,
+*after {
+    box-sizing: border-box;
+}
+
+container {
+    margin: center;
+}
+
+section {
+    background-color: lightyellow;
+    */ padding: 5px;
+    border: 2px solid #000000;
+    width: 500px;
+}
+
+li {
+    display: inline;
+    align-content: auto;
+    border: 2px solid: #000000;
+}
+
+h1 {
+    background-color: white;
+    margin: auto;
+    border: 0px;
+}
+
+#footer-break {
+    background-color: white;
+    border: 0px;
+}
+
+h2,
+h3 {
+    color: cornflowerblue;
+}
+
+#search-bar {
+    background-color: gainsboro;
+    margin: 15px;
+    padding: 5px;
+    width: 455px;
+    display: block;
+    border: 2px solid #000000;
+}
+
+.nav-bar {
+    background-color: lightyellow;
+    */ padding: 5px;
+    border: 2px solid #000000;
+    margin: 15px center;
+    width: 500px;
+    text-align: left;
+}
+
+body {
+    font-size: 24px;
+    /* general contenet ultimate ancersotr, when make look a certain way, others adapt to look like it */
+}

@@ -11,26 +11,21 @@ html {
 before,
 after {
     box-sizing: border-box;
-    
 }
 
 container {
     margin: center;
-    
 }
 
-
 h1 {
-  font-size: 35px;
+    font-size: 35px;
     font-weight: 200;
-    
     margin: 2px;
     border: 0px;
     font-family: serif;
     padding-right: 7px;
     padding-left: 7px;
     text-align: center;
-    
 }
 
 section {
@@ -42,8 +37,7 @@ section {
 }
 
 h4 {
-    
-    text word-spacing: 0px;
+    word-spacing: 0px;
     margin-bottom: 2px;
     text-align: center;
     margin-top: 0px;
@@ -51,25 +45,23 @@ h4 {
     border: 2px solid #000000;
 }
 
-
 li {
     display: inline;
     align-content: auto;
     border: 2px solid: #000000;
-    font-family: sans-serif;    
+    font-family: sans-serif;
 }
 
-p {font-family: sans-serif;
+p {
+    font-family: sans-serif;
     font-size: 18px;
-
 }
-
 
 h2,
 h3,
 h6 {
     color: cornflowerblue;
-    font-family:  serif;
+    font-family: serif;
 }
 
 #search-bar {
@@ -80,52 +72,49 @@ h6 {
     display: block;
     border: 2px solid #000000;
     text-align: left;
-    
-  
 }
 
 .nav-bar {
     background-color: aliceblue;
-   
     */ padding: 5px;
     border: 2px solid #000000;
     margin: 15px center;
     width: 500px;
-    text-align-last:  inherit;
+    text-align-last: inherit;
     font-size: 18px;
     position: relative;
     word-spacing: 5px;
-    
 }
 
 footer {
     background-color: aliceblue;
-   
     */ padding: 5px;
     border: 2px solid #000000;
     margin: 15px auto;
-    width: 500px;
-    text-align-last:  inherit;
+    width: 570px;
+    text-align-last: inherit;
     font-size: 18px;
     position: relative;
     word-spacing: 5px;
 }
 
-#links{ 
+#links {
     color: darkblue;
 }
 
 
 /*.bottom  {*/
+
+
 /*    background-color: aliceblue;*/
-   
+
+
 /*}*/
 
 body {
     font-size: 24px;
     font-family: georgia, sans-serif;
-    
     margin-left: 0px;
     margin-right: 0px;
-        /* general contenet ultimate ancersotr, when make look a certain way, others adapt to look like it */
+    /* general contenet ultimate ancersotr, when make look a certain way, others adapt to look like it */
 }

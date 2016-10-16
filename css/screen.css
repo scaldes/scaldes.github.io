@@ -1,15 +1,10 @@
-/* Chane the Css box model */
-
-
-/*everything thats a ddescendant of html*/
-
-/*html {*/
-/*    box-sizing: border-box;*/
+html {
+    box-sizing: border-box;
 }
 
-/*before,*/
-/*after {*/
-/*    box-sizing: border-box;*/
+before,
+after {
+    box-sizing: border-box;
 }
 
 h1 {
@@ -43,7 +38,6 @@ h4 {
 
 li {
     display: inline;
-    border: 2px solid black;
     font-family: sans-serif;
 }
 

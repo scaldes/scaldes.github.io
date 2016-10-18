@@ -1,0 +1,14 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:befpre, *:after{ 
+    box-sizing: border=box;
+}
+
+p{
+    background-color: aqua;
+    padding: 12px;
+
+}
+

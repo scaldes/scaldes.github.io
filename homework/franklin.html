@@ -2,11 +2,14 @@
 <html lang="en">
 <!--default for mobile then increase size
 MOBILE FIRst then write queirires for tablet then another quierey left tablet that moved to laptop-->
+
 <head>
     <meta charset="utf-8">
     <title>Franklin,ID Weather</title>
     <meta name="viewport" content="width=device-width">
-    <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen"></head>
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
 <body>
     <nav>
         <h1>Franklin,ID Weather</h1>
@@ -31,53 +34,156 @@ MOBILE FIRst then write queirires for tablet then another quierey left tablet th
             <h2>Today's Forecast</h2> <img src="/images/sunny.png" alt="Sunny." width="258" height="190">
             <p><strong>Precipitation: </strong> 0</p>
             <p><strong>Wind: </strong> 1-5 <strong>Direction: </strong> Southwest</p>
-            <h3>Temperature</h3>
+            <h3 id="temp">Temperature</h3>
             <p><strong>High:</strong> 90 <strong> Low:</strong> 66</p>
-            
             <h3 id="hourly-header">Hourly Temperatures</h3>
-            <p id="hourly">
-                <strong>12am:</strong> 67°<br>
-                <strong>1am:</strong> 67°<br>
-                <strong>2am:</strong> 69°<br>
-                <strong>3am:</strong> 69°<br>
-                <strong>4am:</strong> 69°<br>
-                <strong>5am:</strong> 70°<br>
-                <strong>6am: </strong> 69°<br>
-                <strong>7am:</strong> 72°<br>
-                <strong>8am:</strong> 74°<br>
-                <strong>9am:</strong> 77°<br>
-                <strong>10am:</strong> 79°<br>
-                <strong>11am:</strong> 81°<br>
-                <strong>12pm:</strong> 84°<br>
-                <strong>1pm:</strong> 86°<br>
-                <strong>2pm:</strong> 88°<br>
-                <strong>3pm:</strong> 90°<br>
-                <strong>4pm:</strong> 90°<br>
-                <strong>5pm:</strong> 85°<br>
-                <strong>6pm:</strong> 83°<br>
-                <strong>7pm:</strong> 79°<br>
-                <strong>8pm:</strong> 74°<br>
-                <strong>9pm:</strong> 70°<br>
-                <strong>10pm:</strong> 68°<br>
-                <strong>11pm:</strong> 66°
+            <p id="hourly"> <strong>12am:</strong> 67°
+                <br> <strong>1am:</strong> 67°
+                <br> <strong>2am:</strong> 69°
+                <br> <strong>3am:</strong> 69°
+                <br> <strong>4am:</strong> 69°
+                <br> <strong>5am:</strong> 70°
+                <br> <strong>6am: </strong> 69°
+                <br> <strong>7am:</strong> 72°
+                <br> <strong>8am:</strong> 74°
+                <br> <strong>9am:</strong> 77°
+                <br> <strong>10am:</strong> 79°
+                <br> <strong>11am:</strong> 81°
+                <br> <strong>12pm:</strong> 84°
+                <br> <strong>1pm:</strong> 86°
+                <br> <strong>2pm:</strong> 88°
+                <br> <strong>3pm:</strong> 90°
+                <br> <strong>4pm:</strong> 90°
+                <br> <strong>5pm:</strong> 85°
+                <br> <strong>6pm:</strong> 83°
+                <br> <strong>7pm:</strong> 79°
+                <br> <strong>8pm:</strong> 74°
+                <br> <strong>9pm:</strong> 70°
+                <br> <strong>10pm:</strong> 68°
+                <br> <strong>11pm:</strong> 66° </p>
+            <br>
+            <table id="temp-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Degrees (F°)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12am</td>
+                        <td>67°</td>
+                    </tr>
+                    <tr>
+                        <td>1am</td>
+                        <td>67°</td>
+                    </tr>
+                    <tr>
+                        <td>2am</td>
+                        <td>69°</td>
+                    </tr>
+                    <tr>
+                        <td>3am</td>
+                        <td>69°</td>
+                    </tr>
+                    <tr>
+                        <td>4am</td>
+                        <td>69°</td>
+                    </tr>
+                    <tr>
+                        <td>5am</td>
+                        <td>70°</td>
+                    </tr>
+                    <tr>
+                        <td>6am</td>
+                        <td>69°</td>
+                    </tr>
+                    <tr>
+                        <td>7am</td>
+                        <td>72°</td>
+                    </tr>
+                    <tr>
+                        <td>8am</td>
+                        <td>74°</td>
+                    </tr>
+                    <tr>
+                        <td>9am</td>
+                        <td>77°</td>
+                    </tr>
+                    <tr>
+                        <td>10am</td>
+                        <td>79°</td>
+                    </tr>
+                    <tr>
+                        <td>11am</td>
+                        <td>81°</td>
+                    </tr>
+                    <tr>
+                        <td>12pm</td>
+                        <td>84°</td>
+                    </tr>
+                    <tr>
+                        <td>1pm</td>
+                        <td>86°</td>
+                    </tr>
+                    <tr>
+                        <td>2pm</td>
+                        <td>88°</td>
+                    </tr>
+                    <tr>
+                        <td>3pm</td>
+                        <td>90°</td>
+                    </tr>
+                    <tr>
+                        <td>4pm</td>
+                        <td>90°</td>
+                    </tr>
+                    <tr>
+                        <td>5pm</td>
+                        <td>85°</td>
+                    </tr>
+                    <tr>
+                        <td>6pm</td>
+                        <td>83°</td>
+                    </tr>
+                    <tr>
+                        <td>7pm</td>
+                        <td>79°</td>
+                    </tr>
+                    <tr>
+                        <td>8pm</td>
+                        <td>74°</td>
+                    </tr>
+                    <tr>
+                        <td>9pm</td>
+                        <td>70°</td>
+                    </tr>
+                    <tr>
+                        <td>10pm</td>
+                        <td>68°</td>
+                    </tr>
+                    <tr>
+                        <td>11pm</td>
+                        <td>66°</td>
+                    </tr>
+                </tbody>
+            </table>
             
-            
-            
-            
-            </p>
             <h3>Location</h3>
             <p><strong>Zip: </strong> 83237</p>
             <p><strong>Longitude: </strong> -111.803757 <strong> Latitude:</strong> 42.011902</p>
         </section>
         <br> </main>
 </body>
-<footer>
+    <h6>Wireframe</h6>
     <ul>
-        <li>
-            <h6>Wireframe</h6></li>
-        <li><img src="/images/editsmall.jpg" alt="Original wireframe." height="80"></li>
-        <li><img src="/images/updatedwireframe.jpg" alt="Updated wireframe." height="80"></li>
+        <li><img src="/images/smallphone.jpg" alt="Upated edited wireframe for a small screen device." width="150"></li>
+        <li><img src="/images/medtablet.jpg" alt="Upated edited wireframe for a medium screen device." width="150"></li>
+        <li><img src="/images/bigbrowser.jpg" alt="Upated edited wireframe for a large screen device." width="150"></li>
+   
     </ul>
+<footer>
+    
     <ul>
         <li>&copy; 2016 || Samantha Caldes</li>
     </ul>

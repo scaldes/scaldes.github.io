@@ -1,4 +1,4 @@
-html *{
+html * {
     box-sizing: border-box;
 }
 
@@ -6,6 +6,8 @@ html *{
 *:after {
     box-sizing: border-box;
 }
+
+
 /*device-pixel-ratio=1000px;*/
 
 body {
@@ -14,7 +16,9 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+    text-align: center;
 }
+
 h1 {
     font-size: 35px;
     font-weight: 200;
@@ -98,45 +102,69 @@ footer {
 }
 
 #hourly-header {
-	display: none;
+    display: none;
 }
+
 #hourly {
     display: none;
 }
+
 img {
     width: 150px;
 }
-
-
-@media screen and (min-width:600px) {
-.nav-bar {
-width : 100%;
-text-align : center;
+#temp-table{
+    display: none;
 }
-#search-bar {
-	width: 90%;
-}
+
+@media screen and (min-width:800px) {
+    body{
+        text-align: center;
+        
+        
+    }
+    .nav-bar {
+        width: 100%;
+        text-align: center;
+    }
+    #search-bar {
+        width: 90%;
+    }
     .middle {
         width: 100%;
-       
     }
     #hourly-header {
-	display: block;
-    
-}
-    
+        display: block;
+        text-align: center;
+    }
     #hourly {
-	display: inline;
-        
-}
+        display: inline;
+        text-align: center;
+    }
     footer {
         width: 100%
     }
 
-    }
-
 }
-@media screen and (min-width:1024px){
+    #temp-table {
+	display: none;
+}
+
+@media screen and (min-width:1024px) {
     
-        
-} 
+    #hourly {
+	display: none;
+}
+        #temp-table {
+            display: table;
+            text-align: center;
+            margin: 0px auto;
+            border: 1px solid black;
+            padding: 15px;
+            background-color: darkblue;
+            color: white;
+            
+           
+}
+ 
+    
+}

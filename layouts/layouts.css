@@ -1,39 +1,44 @@
-html *{
+/* Replace with flexbox for greenville weather page*/
+
+html {
     box-sizing: border-box;
 }
 
-*:before,
-*:after{
+before,
+after {
     box-sizing: border-box;
 }
 
-body{
-    font: 20px "times new roman", times, serif;
-    margin: 0;
+ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
-@media screen and (min-width:600px) {
-#page-header {
-width : 100%;
-text-align : center;
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
 }
-#page-nav {
-float : left;
-width : 30%;
-padding : 1em;
+
+header {
+    flex-basis: 100%;
+    
 }
-#main {
-width : 40%;
-float : left;
-margin : 1em;
-padding : 1em;
+
+main {
+    
+    flex-basis: 400%;
+    border: 2px solid #000;
 }
-#page-aside {
-float : left;
-width : 20%;
-padding : 1em;
+
+aside {
+    flex-basis: 40%;
 }
-#page-footer {
-clear : left;
+
+footer {
+    flex-basis: 100%;
 }
+
+nav {
+    flex-basis: 20%;
 }

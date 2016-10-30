@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: green;
+}
+nav{
+    background-color: blue;
+}
+main{
+    background-color: red;
+}
+aside{
+    background-color: yellow;
+}
+footer{
+    background-color: purple;
+}
+
+body{
+    /* FLEX PARENT*/
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*FLEX ITEMS*/
+header{
+    flex-basis: 100%;
+}
+
+nav{
+flex-basis: 20%;
+    
+}
+
+main{
+    flex-basis:50%;
+    
+}
+
+aside{
+    flex-basis: 30%;
+    
+}
+
+footer{
+    flex-basis: 100%;
+}

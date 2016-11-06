@@ -176,7 +176,7 @@ article {
         text-align: center;
     }
     aside {
-        flex-basis: 10%;
+        flex-basis: 5%;
         
         display: block;
         padding: 5px;

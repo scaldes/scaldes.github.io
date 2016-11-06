@@ -33,6 +33,7 @@ ul {
 p{
     margin: 2px;
     padding: 2px;
+    text-align: center;
 }
 
 /*FLEX ITEMS*/
@@ -64,6 +65,9 @@ footer {
 }
 
 aside {
+    display: none;
+}
+article {
     display: none;
 }
 
@@ -119,6 +123,10 @@ aside {
         display: block;
         padding: 15px;
     }
+    article {
+        display: none;
+    }
+    
 }
 
 @media screen and (min-width:1024px) {
@@ -128,7 +136,7 @@ aside {
     main {
         background-color: white;
     }
-    aside {
+    aside, article {
         background-color: lightblue;
     }
     footer {
@@ -157,21 +165,28 @@ aside {
         margin: 5px;
         padding: 5px;
     }
+   article {
+        flex-basis: 5%;
+       padding: 10px;
+       display: block;      
+    }
     main {
-        flex-basis: 75%;
+        flex-basis: 65%;
         padding: 15px;
         text-align: center;
     }
     aside {
-        flex-basis: 25%;
-        text-align: center;
+        flex-basis: 10%;
+        
         display: block;
-        padding: 15px;
+        padding: 5px;
+    
     }
     
     img {
         align-content: center;
         padding: 15px;
+        
     }
     footer {
         flex-basis: 100%;

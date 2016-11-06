@@ -35,9 +35,7 @@ p{
     padding: 2px;
     text-align: center;
 }
-footer {
-    text-align: center;
-}
+
 /*FLEX ITEMS*/
 
 header {
@@ -169,17 +167,16 @@ article {
     }
    article {
         flex-basis: 5%;
-       padding: 5px;
+       padding: 10px;
        display: block;      
     }
     main {
-        flex-basis: 60%;
+        flex-basis: 65%;
         padding: 15px;
-        display: block;
         text-align: center;
     }
     aside {
-        flex-basis: 5%;
+        flex-basis: 10%;
         
         display: block;
         padding: 5px;

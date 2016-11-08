@@ -45,15 +45,30 @@ header {
     flex-basis: 100%;
     padding: 8px;
     text-align: center;
+    display: flex;
+  justify-content: center;
 }
-
+#logo {
+	height: 80px;
+    order: 0; /*to make modularization work*/
+}
+header>h1 {
+    order:1;
+}
 nav {
     text-align: center;
     border: 2px solid black;
+    width: 100%;
+    order: 2;
+/*
     margin: 5px;
     padding: 5px;
+*/
 }
-
+nav>ul {
+    display: flex; /*to make li go on 1 line/contol easily*/
+    justify-content: space-around;
+}
 main {
     flex-basis: 100%;
     padding: 15px;

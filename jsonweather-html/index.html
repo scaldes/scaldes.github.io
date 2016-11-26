@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Weather Home</title>
+    <title id="cityDisplay"> | Weather Home</title>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="/jsonweather-html/css/weather-style.css" type="text/css" media="screen"> </head>
@@ -59,7 +59,7 @@
                                     url: '//api.wunderground.com/api/ea19bcd1f5d58aa1/geolookup/conditions/q/' + lat + ',' + long + '.json'
                                     , dataType: "jsonp"
                                     , success: function (data) {
-                                         console.log(data);
+                                        console.log(data);
                                         var cityState = data.location.city + ", " + data.location.state;
                                         var temp = Math.round(data.current_observation.temp_f);
                                         var currentConditions = (data.current_observation.weather);
@@ -77,7 +77,6 @@
                                         $("#add1").text(feelsLike);
                                         $("#add2").text(precipToday);
                                         $('#add3').text("Wind Direction: " + windDir);
-                                       
                                         $("#cover").fadeOut(250);
                                     }
                                 });

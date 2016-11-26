@@ -31,11 +31,6 @@ $(function () {
                 var feelsLike = ("Feels like: " + data.current_observation.feelslike_f + "°")
                 var precipToday = ("Precipitation: " + data.current_observation.precip_today_in + "in");
                 var windDir = data.current_observation.wind_dir;
-                //TELL WHERE TO GO/HOW (GET DATA BASED ON LAT AND LONG)
-                //EXPECT TO GET BACK JSONP FILE
-                //SUCCESS FUNCTION, STORE DATA INTO VARIABLE, THEN BREAK APART, THEN TELL WHAT TO DO
-                //USE VIDEO TO HELP, NOT EXACT CODE, BUT SIMILAR!
-                //PUT FRANKLIN AND GREENIILE IN A NEW FOLDER WITHIN HW (WEATHER)...PUT INDEX IN THAT FOLDER(INDEX IS THE CURRENT LOCATION)
                 $("#cityDisplay").text(cityState);
                 $("#currentTemp").text(temp + "°");
                 $("#summary").text(currentConditions);

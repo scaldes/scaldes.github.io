@@ -2,53 +2,55 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Current Location</title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link href="/css/flexscreen.css" rel="stylesheet" type="text/css" media="screen"> 
-</head>
+    <meta charset="utf-8">
+    <title>Current Location</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="/css/flexscreen.css" rel="stylesheet" type="text/css" media="screen"> </head>
 <!-- *********************************************
 * Who Did You Collaborate With On This Assessment?
 * 1. Your own name goes here
 * 2.Shaelyn Rich
 * 3.Joseph Canto
 * ******************************************** -->
-<body id="curloc">
-  <div id="wrapper">
-    <header id="page-header"></header>
-    <nav id="page-nav"></nav>
-    <main id="page-main">
-      <section class="weather-container">
-        <div id="cover">
-          <div id="status">Loading...</div>
-        </div>
-        <h1 id="cityDisplay"></h1>
-        <h2>Current Conditions</h2>
-        <ul id="current_conditions">
-          <li id="currentTemp"></li>
-          <li id="summary"></li>
-          <li id="add1"></li>
-          <li id="add2"></li>
-          <li id="add3"></li>
-        </ul>
-      </section>
-    </main>
-    <footer id="page-footer">
-      <div id="footer-content"></div>
-      <small>Last updated: </small>
-      <script
-          src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="/js_test/scripts/module.js"></script>
-       <script src="/jsonweather-html/scripts/remote_wu.js"></script>
-      
-    
-    
-    </footer>
 
-  </div>
+<body>
+    <noscript>JavaScript is not enabled. For navigation visit the <a href="/js_test/sitemap.html">Site Map</a></noscript>
+    <header id="page-header"> </header>
+    <article>
+        <h3>International Weather Articles</h3>
+        <a href="http://www.bbc.com/weather/features/38109507" title="This will take you to bbc.com weather article to read more."><img src="/images/italy.png" width="250" alt="Severe rain in Northern Italy."></a>
+        <p>Severe rain in Northern Italy.</p>
+        <a href="http://www.bbc.com/news/world-latin-america-38103330" title="This will take you to bbc.com weather article to read more."><img src="/images/costa-rica.png" width="250" alt="Tropical storm Otto in Costa Rica, 9 dead."></a>
+        <p>Tropical storm Otto in Costa Rica, 9 dead.</p>
+    </article>
+    <main>
+        <h2>Current Location</h2>
+        <div id="wrapper">
+            <div id="cover">
+                <div id="status">Loading...</div>
+            </div>
+            <h1 id="cityDisplay"></h1>
+            <h2>Current Conditions</h2>
+            <ul id="current_conditions">
+                <li id="currentTemp"></li>
+                <li id="summary"></li>
+                <li id="add1"></li>
+                <li id="add2"></li>
+                <li id="add3"></li>
+            </ul> <img src="/jsonweather-html/images/wulogo.png" title="Weather Underground logo."> </div>
+    </main>
+    <aside>
+        <p> <img href="http://spaceplace.nasa.gov/hurricanes/en/" src="/images/hurricane" alt="Cyclone apperances." width="225"></p>
+        <p><a href="http://spaceplace.nasa.gov/hurricanes/en/" title="This will take you to NASA.gov">NASA</a> showing Cyclone appereances.</p>
+        <p><img src="/images/nat-disasters.jpg" alt="Worldwide national disasters graph." width="225"></p>
+        <p>Natural disasters worldwide; economical damage.</p>
+    </aside>
+    <footer id='page-footer'>
+        <div id="footer-content"></div> <small>Last updated: </small>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="/js_test/scripts/module.js"></script>
+        <script src="/jsonweather-html/scripts/remote_wu.js"></script>
+    </footer>
 </body>
 
 </html>

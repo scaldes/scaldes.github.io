@@ -1,1 +1,4 @@
 Weather Key: ea19bcd1f5d58aa1
+var img = data['current_observation']['icon']
+<img id="condpic">
+$('#condpic').att('src',img);

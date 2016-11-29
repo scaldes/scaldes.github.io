@@ -27,17 +27,20 @@ $(function () {
             , success: function (data) {
                 console.log(data);
                 var cityState = data.location.city + ", " + data.location.state;
+                var cityStateTitle = data.location.city + ", " + data.location.state;
                 var temp = Math.round(data.current_observation.temp_f);
                 var currentConditions = (data.current_observation.weather);
                 var feelsLike = ("Feels like: " + data.current_observation.feelslike_f + "°")
                 var precipToday = ("Precipitation: " + data.current_observation.precip_today_in + "in");
                 var windDir = data.current_observation.wind_dir;
                 $("#cityDisplay").text(cityState);
+                $('#cityDisplayTitle').text(cityState);
                 $("#currentTemp").text(temp + "°");
                 $("#summary").text(currentConditions);
                 $("#add1").text(feelsLike);
                 $("#add2").text(precipToday);
                 $('#add3').text("Wind Direction: " + windDir);
+                
                 $("#cover").fadeOut(250);
             }
         });

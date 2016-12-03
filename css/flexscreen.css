@@ -1,241 +1,264 @@
-            html * {
-        box-sizing: border-box;
-    }
-    
-    weather-container *:before,
-    *:after {
-        /*    box-sizing: border-box;*/
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: 1.1em;
-    }
-    
-    header {
-        background-color: lemonchiffon;
-    }
-    
-    main {
-        background-color: white;
-    }
-    
-    h2,
-    h4 {
-        color: lightblue;
-    }
-    
-    body {
-        /* FLEX PARENT*/
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #currentTemp {
-        margin: 0;
-        font-size: 4em;
-        text-align: center;
-    }
-    
-    p {
-        margin: 2px;
-        padding: 2px;
-        text-align: center;
-    }
-    
-    h3 {
-        color: black;
-        text-align: center;
-    }
-    /*FLEX ITEMS*/
-    
-    header {
-        flex-basis: 100%;
-        padding: 8px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #logo {
-        height: 80px;
-        order: 0;
-        /*to make modularization work*/
-    }
-    
-    header>h1 {
-        order: 1;
-    }
-    
-    nav {
-        text-align: center;
-        border: 2px solid black;
-        width: 100%;
-        order: 2;
-        /*
-    margin: 5px;
-    padding: 5px;
-*/
-    }
-    
-    nav>ul {
-        display: flex;
-        /*to make li go on 1 line/contol easily*/
-        justify-content: space-around;
-        width: 100%;
-    }
-    
-    main {
-        flex-basis: 100%;
-        padding: 15px;
-        text-align: center;
-    }
-    
-    aside {
-        display: none;
-    }
-    
-    article {
-        display: none;
-    }
-    
-    footer {
-        flex-basis: 100%;
-        padding: 15px;
-        background-color: lemonchiffon;
-        text-align: center;
-    }
-    
-    @media screen and (min-width:800px) {
-        header {
-            background-color: lemonchiffon;
-        }
-        main {
-            background-color: white;
-        }
-        aside,
-        article {
-            background-color: lightblue;
-        }
-        footer {
-            background-color: lemonchiffon;
-        }
-        body {
-            /* FLEX PARENT*/
-            display: flex;
-            flex-wrap: wrap;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        /*FLEX ITEMS*/
-        header {
-            flex-basis: 100%;
-            padding: 15px;
-            flex-wrap: wrap;
-        }
-        nav {
-            text-align: center;
-            border: 2px solid black;
-            margin: 5px;
-            padding: 5px;
-        }
-        article {
-            flex-basis: 5%;
-            padding: 10px;
-            display: block;
-        }
-        main {
-            flex-basis: 60%;
-            padding: 5px;
-            text-align: center;
-        }
-        img {
-            align-content: center;
-            padding: 15px;
-        }
-        footer {
-            flex-basis: 100%;
-            padding: 15px;
-            text-align: center;
-        }
-        #currentTemp {
-            margin: 0;
-            font-size: 4em;
-            text-align: center;
-        }
-        @media screen and (min-width:1351px) {
+                html * {
+                box-sizing: border-box;
+            }
+            
+            weather-container *:before,
+            *:after {
+                /*    box-sizing: border-box;*/
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 1.1em;
+            }
+            
             header {
                 background-color: lemonchiffon;
             }
+            
             main {
                 background-color: white;
             }
-            aside,
-            article {
-                background-color: lightblue;
+            
+            h2,
+            h4 {
+                color: lightblue;
             }
-            footer {
-                background-color: lemonchiffon;
-            }
+
             body {
                 /* FLEX PARENT*/
                 display: flex;
                 flex-wrap: wrap;
             }
+            
             ul {
                 list-style: none;
                 padding: 0;
                 margin: 0;
             }
-            /*FLEX ITEMS*/
-            header {
-                flex-basis: 100%;
-                padding: 15px;
-                flex-wrap: wrap;
-            }
-            nav {
-                text-align: center;
-                border: 2px solid black;
-                margin: 5px;
-                padding: 5px;
-            }
+            
             #currentTemp {
                 margin: 0;
                 font-size: 4em;
                 text-align: center;
             }
-            article {
-                flex-basis: 20%;
-                display: block;
-                padding: 10px;
-            }
-            main {
-                flex-basis: 60%;
-                padding: 5px;
+            
+            p {
+                margin: 2px;
+                padding: 2px;
                 text-align: center;
             }
-            aside {
-                flex-basis: 20%;
-                display: block;
-                padding: 10px;
+            
+            h3 {
+                color: black;
+                text-align: center;
             }
-            img {
-                align-content: center;
-                padding: 15px;
+            /*FLEX ITEMS*/
+            
+            header {
+                flex-basis: 100%;
+                padding: 8px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
             }
-            footer {
+            
+            #logo {
+                height: 80px;
+                order: 0;
+                /*to make modularization work*/
+            }
+            
+            header>h1 {
+                order: 1;
+            }
+            
+            nav {
+                text-align: center;
+                border: 2px solid black;
+                width: 100%;
+                order: 2;
+                /*
+    margin: 5px;
+    padding: 5px;
+*/
+            }
+            
+            nav>ul {
+                display: flex;
+                /*to make li go on 1 line/contol easily*/
+                justify-content: space-around;
+                width: 100%;
+            }
+            
+            main {
                 flex-basis: 100%;
                 padding: 15px;
                 text-align: center;
             }
-        }
+            
+            aside {
+                display: none;
+            }
+            
+            article {
+                display: none;
+            }
+            
+            footer {
+                flex-basis: 100%;
+                padding: 15px;
+                background-color: lemonchiffon;
+                text-align: center;
+            }
+            
+            #searchResults {
+                flex-basis: 19%;
+                border: 1px black solid;
+            }
+            
+            @media screen and (min-width:800px) {
+                header {
+                    background-color: lemonchiffon;
+                }
+                main {
+                    background-color: white;
+                }
+                aside,
+                article {
+                    background-color: lightblue;
+                }
+                footer {
+                    background-color: lemonchiffon;
+                }
+                body {
+                    /* FLEX PARENT*/
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                /*FLEX ITEMS*/
+                header {
+                    flex-basis: 100%;
+                    padding: 15px;
+                    flex-wrap: wrap;
+                }
+                nav {
+                    text-align: center;
+                    border: 2px solid black;
+                    margin: 5px;
+                    padding: 5px;
+                }
+                article {
+                    flex-basis: 5%;
+                    padding: 10px;
+                    display: block;
+                }
+                main {
+                    flex-basis: 60%;
+                    padding: 5px;
+                    text-align: center;
+                }
+                img {
+                    align-content: center;
+                    padding: 15px;
+                }
+                footer {
+                    flex-basis: 100%;
+                    padding: 15px;
+                    text-align: center;
+                }
+                #currentTemp {
+                    margin: 0;
+                    font-size: 4em;
+                    text-align: center;
+                }
+                 #searchResults {
+                flex-basis: 19%;
+                border: 1px black solid;
+            }
+            
+                @media screen and (min-width:1024px) {
+                    header {
+                        background-color: lemonchiffon;
+                    }
+                    main {
+                        background-color: white;
+                    }
+                    aside,
+                    article {
+                        background-color: lightblue;
+                    }
+                    footer {
+                        background-color: lemonchiffon;
+                    }
+                    body {
+                        /* FLEX PARENT*/
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    /*FLEX ITEMS*/
+                    header {
+                        flex-basis: 100%;
+                        padding: 15px;
+                        flex-wrap: wrap;
+                    }
+                    nav {
+                        text-align: center;
+                        border: 2px solid black;
+                        margin: 5px;
+                        padding: 5px;
+                    }
+                    #currentTemp {
+                        margin: 0;
+                        font-size: 4em;
+                        text-align: center;
+                    }
+                    article {
+                        flex-basis: 20%;
+                        display: block;
+                        padding: 10px;
+                    }
+                    main {
+                        flex-basis: 60%;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                    aside {
+                        flex-basis: 20%;
+                        display: block;
+                        padding: 10px;
+                    }
+                    img {
+                        align-content: center;
+                        padding: 15px;
+                    }
+                    footer {
+                        flex-basis: 100%;
+                        padding: 15px;
+                        text-align: center;
+                    }
+                #middle-search {
+	text-align: center;
+                        flex-basis: 60%;
+}
+                 #searchResults {
+                flex-basis: 19%;
+                border: 1px black solid;
+                     align-items: center;
+                     
+                     
+            }
+                   
+                    
+}

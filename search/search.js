@@ -1,24 +1,29 @@
-// Current Location Scripts
-$(function () {
-    //will identify status
-    var status = $('#status');
-    //dont touch, fully operational ("find out where youre at")
-    (function getGeoLocation() {
-        status.text('Getting Location...');
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                //will send to the getData function
-                var lat = position.coords.latitude;
-                var long = position.coords.longitude;
-                // Call the getData function, send the lat and long
-                getData(lat, long);
-            });
-        }
-        else {
-            status.text("Your browser doesn't support Geolocation or it is not enabled!");
-        }
-    })();
-    // Get the data from the wunderground API
+$('#query').keyup(function(){
+  // All code will be inside of this block
+  
+    var value = $('#query').val();
+    var rExp = new RegExp(value, "i");
+    
+
+ $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+      // Intercept the menu link clicks
+  $("searchResults").on("click", "a", function(evt) {
+    evt.preventDefault();
+  console.log(data);
+     // Begin building output
+    var output = '<ol>';
+    $.each(data.RESULTS, function(key, val) {
+      if (val.name.search(rExp) != -1) {
+        output += '<li>';
+        output += '<a href="http://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+        output += '</li>';
+      }
+    }); // end each
+    output += '</ol>';
+    $("#searchResults").html(output); // send results to the page
+  }); // end getJSON
+    }); // end keyup
+// Get the data from the wunderground API
     function getData(lat, long) {
         //PUT CODE HERE
         $.ajax({
@@ -56,3 +61,21 @@ $(function () {
         });
     }
 });
+// Intercept the menu link clicks
+    $("#page-nav").on("click", "a", function (evt) {
+        evt.preventDefault();
+        // With the text value get the needed value from the weather.json file
+        var jsonCity = $(this).text(); // Franklin, etc...
+        console.log(jsonCity);
+        $.ajax({
+            url: "/menu-activity/scripts/weather.json"
+            , dataType: "json"
+            , success: function (data) {
+                console.log(data);
+                console.log(data[jsonCity]);
+                var zip = data[jsonCity].zip;
+                console.log(zip);
+                getData(zip);
+            }
+        });
+    });

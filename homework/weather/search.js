@@ -5,7 +5,7 @@ $('#query').keyup(function(){
     var rExp = new RegExp(value, "i");
     
 
- $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+ $.getJSON("https://www.autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
   console.log(data);
      // Begin building output
     var output = '<ol>';

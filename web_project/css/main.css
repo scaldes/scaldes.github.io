@@ -34,6 +34,7 @@
      position: relative;
      border: 1px black solid;
      left: 25px;
+     
  }
  
  #top-row,
@@ -67,6 +68,8 @@
  nav li {
      flex: 1 0 em;
      color: #124569;
+     font-size:.5l
+         
  }
  
  a {

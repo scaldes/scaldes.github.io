@@ -3,40 +3,30 @@
     "Mornings": "Wake up, pray, exercise, and do other preparation for the day.",
     "Breakfast": "Eat a nutritional meal",
     "Personal Study": "Study The Book of Mormon, other scriptures, chapters from Preach My Gospel, etc. with an emphasis on the doctrines of the missionary lessons.",
-    "Companion study": "Share what you have learned during personal study, prepare to teach, and confirm plans for the day.",
-    "Begin proselyting": "teaching appointments, finding people to teach, open your mouth, etc.",
+    "Companion Study": "Share what you have learned during personal study, prepare to teach, and confirm plans for the day.",
+    "Begin Proselyting": "teaching appointments, finding people to teach, open your mouth, etc.",
     "Lunch and Dinner:": "You may take an hour for lunch and an hour for dinner at times that fit best with proselyting. Normally, dinner should be finished no later than 6:00 p.m.",
     "End of the day": "Return to the apartment and plan the next day’s activities. Write in journal, prepare for bed, pray.",
     "Rest": "Go to bed.",
-    "Schedule": {
-      "6:30am": "Mornings",
-      "7:30am": "Breakfast",
-      "8am": "Personal study",
-      "9am": "Companion study",
-      "10am": "Begin proselyting",
-      "12pm-5pm": "Lunch and dinner",
-      "9am-9pm": "End of the day",
-      "10:30pm": "Rest"
+    "Schedule": ["6:30am", "7:30am", "8am", "9am", "10am", "12pm-5pm", "9am-9pm", "10:30pm"],
+    "Activity": ["Mornings", "Breakfast", "Personal study", "Companion study", "Begin proselyting", "Lunch and dinner", "End of the day","Rest"]
     }
+      
+      
+     
+      data.ms.schedule[0]
   },
   "Mission Life": {
     "Mornings": "Wake up, pray, exercise, and do other preparation for the day.",
     "Breakfast": "Eat a nutritional meal",
     "Personal Study": " Study The Book of Mormon, other scriptures, chapters from Preach My Gospel, etc. with an emphasis on the doctrines of the missionary lessons.",
-    "Companion study": "Share what you have learned during personal study, prepare to teach, and confirm plans for the day.",
-    "Begin proselyting": "teaching appointments, finding people to teach, open your mouth, etc.",
+    "Companion Study": "Share what you have learned during personal study, prepare to teach, and confirm plans for the day.",
+    "Begin Proselyting": "teaching appointments, finding people to teach, open your mouth, etc.",
     "Lunch and Dinner:": "You may take an hour for lunch and an hour for dinner at times that fit best with proselyting. Normally, dinner should be finished no later than 6:00 p.m.",
     "End of the day": "Return to the apartment and plan the next day’s activities. Write in journal, prepare for bed, pray.",
     "Rest": "Go to bed.",
-    "Schedule": {
-      "6:30am": "Mornings",
-      "7:30am": "Breakfast",
-      "8am": "Personal study",
-      "9am": "Companion study",
-      "10am": "Begin proselyting",
-      "12pm-5pm": "Lunch and dinner",
-      "9am-9pm": "End of the day",
-      "10:30pm": "Rest"
+    "Schedule": ["6:30am", "7:30am", "8am", "9am", "10am", "12pm-5pm", "9am-9pm", "10:30pm"],
+    "Activity": ["Mornings", "Breakfast", "Personal study", "Companion study", "Begin proselyting", "Lunch and dinner", "End of the day","Rest"]
     }
   }
 }

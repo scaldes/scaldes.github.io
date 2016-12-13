@@ -7,93 +7,78 @@
     <link rel="stylesheet" type="text/css" href="/web_project/css/main.css"> </head>
 
 <body>
-   <noscript>JavaScript is not enabled. For navigation visit the <a href="/web_project/js/scripts/sitemap.html">Site Map</a></noscript>
-   <header id="page-header">
-<!--       JS will load stuff here-->
-    </header>
-    <div id="content"> <img class="fullwidth" src="/web_project/images/logo.jpg" alt="Called to Serve Logo" width="150">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/web_project/pages/index.html">Home</a></li>
-                <li><a href="/web_project/pages/missionary-schedule.html">Missionary Schedule</a></li>
-                <li><a href="/web_project/pages/elder-caldes.html">Elder Caldes</a></li>
-                <li><a href="/web_project/pages/mission-life.html">Mission Life</a></li>
-                <li><a href="/web_project/pages/learn-more.html">Learn More</a></li>
-                </ul>
-            </nav>
-            <div id="banner"> <img src="/web_project/images/banner.jpg" alt="Called to Serve banner."> </div>
+    <noscript>JavaScript is not enabled. For navigation visit the <a href="/web_project/js/scripts/sitemap.html">Site Map</a></noscript>
+    <div id="content">
+        <script>
+//            INSERT GET-JSON.JS HERE
+            
+        </script>
+        <header id="page-header">
+            <!--       JS will load stuff here-->
         </header>
         <section id="top-row">
             <div class="leftcol">
-                <h2>Mornings:</h2>
-                <ul><li>6:30am</li></ul>
-                <p>Wake up, pray, exercise, and do other preparation for the day.</p>
-                <h2>Breakfast:</h2>
-                 <ul><li>7:30am</li></ul>
-                <p>Eat a nutritional meal.</p>
-    
+                <main>
+                    <h2 id="morning1"></h2>
+                    <ul>
+                        <li id="time1"></li>
+                    </ul>
+                    <p>Wake up, pray, exercise, and do other preparation for the day.</p>
+                    <h2 id="morning2"></h2>
+                    <ul>
+                        <li id="time2"></li>
+                    </ul>
+                    <p>Eat a nutritional meal.</p>
+                </main>
             </div>
-            <div class="rightcol"> 
-            <img src="/web_project/images/breakfast.JPG" alt="A waffle shaped as Texas.">
-            </div>
+            <div class="rightcol"> <img src="/web_project/images/breakfast.JPG" alt="A waffle shaped as Texas."> </div>
         </section>
         <section id="middle-row">
-            <div class="leftcol">
-                
-                <img src="/web_project/images/companion-study.JPG" alt="Companion study.">
-            </div>
+            <div class="leftcol"> <img src="/web_project/images/companion-study.JPG" alt="Companion study."> </div>
             <div class="rightcol">
-                <h2>Personal Study:</h2>
-                 <ul><li>8am</li></ul>
+                <h2 id="day1"></h2>
+                <ul>
+                    <li id="time3"></li>
+                </ul>
                 <p> Study The Book of Mormon, other scriptures, chapters from Preach My Gospel, etc. with an emphasis on the doctrines of the missionary lessons.</p>
-                <h2>Companion Study:</h2>
-                 <ul><li>9am</li></ul>
+                <h2 id="day2"></h2>
+                <ul>
+                    <li id="time4"></li>
+                </ul>
                 <p>Share what you have learned during personal study, prepare to teach, and confirm plans for the day.</p>
             </div>
         </section>
-         
         <section id="bottom-row">
-           
-             <div class="leftcol">
-             <h2 class="red">Begin Proselyting:</h2>
-              <ul><li>10am</li></ul>
-             <p>Teaching appointments, finding people to teach, open your mouth, etc.</p>
-             <h2>Lunch and Dinner:</h2>
-              <ul><li>12pm-5pm</li></ul>
-             <p>You may take an hour for lunch and an hour for dinner at times that fit best with proselyting. Normally, dinner should be finished no later than 6:00 p.m.</p>
-             <h2>End of the day:</h2>
-              <ul><li>9am-9pm</li></ul>
-             <p>Return to the apartment and plan the next day’s activities. Write in journal, prepare for bed, pray.</p>
-             <h2>Rest:</h2>
-              <ul><li>10:30am</li></ul>
-             <p>Go to bed.</p>
-            
-           </div>
-                     
-                     <div class="rightcol">
-                     <img src="/web_project/images/prozelyting.jpeg" alt="Elder Caldes and ompanion proselyting">
-                      <img src="/web_project/images/lunch-dinner.jpg" alt="Elders eating lunch/dinner at a zone conference.">
-                       </div>
-        </section>
-        <footer>
-            <p id="copyright">&copy; 2016 Called to Serve || Samantha Caldes || <a href='/web_project/pages/homework.html' title='This will take you to my Homework Page.'>Homework ||</a> <a href='/web_project/pages/planning.html' title='This will take you to my Planning Page.'>Planning</a></p>
-            <div id="social-media">
-                <a href="https://www.facebook.com/LDSMissionaries" title="This will take you to Facebook.com to the LDS Missionaries Page."><img src="/web_project/images/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/missionariescomingsoon/?hl=en" title="This will take you to Instagram.com to the LDS Missionaries Coming Soon Page"> <img src="/web_project/images/instagram.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/user/TheDistrictLDS" title="This will take you to Youtube.com to The District channel about missionaries."><img src="/web_project/images/youtube.png" alt="Youtube"></a>
-                
-                
-                <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="/web_project/scripts/module.js"></script>
-                
-                
-                
+            <div class="leftcol">
+                <h2 id='day3'></h2>
+                <ul>
+                    <li id="time5"></li>
+                </ul>
+                <p>Teaching appointments, finding people to teach, open your mouth, etc.</p>
+                <h2 id="day4"></h2>
+                <ul>
+                    <li id="time6"></li>
+                </ul>
+                <p>You may take an hour for lunch and an hour for dinner at times that fit best with proselyting. Normally, dinner should be finished no later than 6:00 p.m.</p>
+                <h2 id="night1"></h2>
+                <ul>
+                    <li id="time7"></li>
+                </ul>
+                <p>Return to the apartment and plan the next day’s activities. Write in journal, prepare for bed, pray.</p>
+                <h2 id="night2"></h2>
+                <ul>
+                    <li id="time8"></li>
+                </ul>
+                <p>Go to bed.</p>
             </div>
+            <div class="rightcol"> <img src="/web_project/images/prozelyting.jpeg" alt="Elder Caldes and ompanion proselyting"> <img src="/web_project/images/lunch-dinner.jpg" alt="Elders eating lunch/dinner at a zone conference."> </div>
+        </section>
+        <footer id="page-footer">
+            <!--        Js loads here-->
         </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="/web_project/js/scripts/module.js"></script>
+        <script src="/web_project/js/scripts/get-json.js"></script>
     </div>
 </body>
 

@@ -1,6 +1,5 @@
-
-/*         @import url('https://fonts.googleapis.com/css?family=Rock+Salt');*/
-         @import url('https://fonts.gstatic.com/s/rocksalt/v6/Q94aHXFHGip10K5uxi1jOFtXRa8TVwTICgirnJhmVJw.woff2');
+     @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+        
          html {
              background-color: #5788AA;
          }
@@ -141,8 +140,8 @@
          }
        
  @media screen and (min-width:800px) {
-/*         @import url('https://fonts.googleapis.com/css?family=Rock+Salt');*/
-         @import url('https://fonts.gstatic.com/s/rocksalt/v6/Q94aHXFHGip10K5uxi1jOFtXRa8TVwTICgirnJhmVJw.woff2');
+         @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+   
          html {
              background-color: #5788AA;
          }
@@ -283,8 +282,8 @@
          }
           
 @media screen and (min-width:1024px) {
-/*         @import url('https://fonts.googleapis.com/css?family=Rock+Salt');*/
-    @import url('https://fonts.gstatic.com/s/rocksalt/v6/Q94aHXFHGip10K5uxi1jOFtXRa8TVwTICgirnJhmVJw.woff2');
+         @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+  
          html {
              background-color: #5788AA;
          }

@@ -8,7 +8,7 @@
              font-size: 1.1em;
          }
          .featured-video {
-             display: inline-flex;
+            
              margin: 15px;
              border: 1px black solid;
              display: none;
@@ -150,9 +150,6 @@
              font-size: 1.1em;
          }
          .featured-video {
-             display: inline-flex;
-             margin: 15px;
-             border: 1px black solid;
              display: flex;
          }
          #schedule {

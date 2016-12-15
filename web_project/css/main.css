@@ -459,6 +459,10 @@ footer {
     justify-content: space-between;
     padding: 15px;
 }
+ .featured-image {
+        display: flex;
+        width: 100%;
+
 #title {
     display: block;
     text-align: center;

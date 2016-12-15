@@ -160,7 +160,7 @@
      width: 100%;
      display: none;
  }
-}
+
 @media screen and (min-width:800px) {
     html {
         background-color: #5788AA;
@@ -473,4 +473,3 @@ footer {
     display: block;
 }
 
-}
